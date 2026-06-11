@@ -3,7 +3,7 @@ import {RootApi} from "./Root.api.js";
 
 export const employeeAllGetApi = async () => {
     try{
-        const response = await RootApi.get("http://localhost:3001/employees")
+        const response = await RootApi.get("/employees")
         return response.data
     }
     catch(error){
