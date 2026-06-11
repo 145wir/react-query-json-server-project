@@ -2,7 +2,7 @@ import {RootApi} from "./Root.api.js";
 
 export const todoAllGetApi = async () => {
     try{
-        const response = await RootApi.get("http:///todos")
+        const response = await RootApi.get("/todos")
         return response.data
     }
     catch(error){
